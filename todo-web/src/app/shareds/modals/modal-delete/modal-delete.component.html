@@ -1,0 +1,15 @@
+<div class="container-modal-add">
+  <div class="texts">
+    <h1 class="title">Add a task</h1>
+    <span>List will be permanently deleted</span>
+  </div>
+    
+  <mat-dialog-actions align="end">
+    <div class="buttons">
+      <button mat-dialog-close class="cancel">Cancel</button>
+      <button class="remove-task" [mat-dialog-close]="true" (click)="deleteTask()">
+        Delete
+      </button> 
+    </div>
+  </mat-dialog-actions>
+</div>

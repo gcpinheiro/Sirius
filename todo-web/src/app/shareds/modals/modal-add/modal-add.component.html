@@ -1,0 +1,22 @@
+<div class="container-modal-add">
+  <h1 class="title">Add a task</h1>
+  <div class="box-input">
+    <input type="checkbox" name="" id="">
+    <input type="text" placeholder="Add task" [(ngModel)]="data" name="task"> 
+  </div>
+
+  
+  <mat-dialog-actions align="end">
+    <!-- <button mat-button mat-dialog-close class="cancel">Cancel</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button> -->
+    <div class="buttons">
+      <button mat-dialog-close class="cancel">Cancel</button>
+      <button class="add-task" [mat-dialog-close]="true" (click)="registerTask()">
+        <div class="button-add">
+          <img src="assets/images/icons/add-task.svg" alt="">
+          <span>Add</span>
+        </div>
+      </button> 
+    </div>
+  </mat-dialog-actions>
+</div>

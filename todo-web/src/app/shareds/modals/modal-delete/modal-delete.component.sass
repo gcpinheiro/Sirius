@@ -1,0 +1,91 @@
+@import "./../../../core/styles/variables"
+
+
+.container-modal-add
+  width: 310px
+  height: 172px
+  padding: 24px
+  box-sizing: border-box
+  background: $color-white
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  border-radius: 28px
+
+  .texts
+    display: flex
+    flex-direction: column
+
+    .title
+      color: $color-dark
+      font-size: 22px
+      font-weight: 400
+      margin-bottom: 16px
+
+  .box-input
+    width: 100%
+    height: 60px
+    flex-direction: row
+    align-items: center
+    border-bottom: 2px solid rgba(28, 27, 31, 0.38)
+    padding-left: 19px
+    box-sizing: border-box
+    background: $color-gray-light
+    border-radius: 4px 4px 0px 0px
+    
+    input[type='text']
+      width: 90%
+      height: 100%
+      border: none
+      background: $color-gray-light
+
+    input[type='checkbox']
+      width: 24px
+      margin-right: 10px
+      cursor: pointer
+
+  .buttons
+    display: flex
+    flex-direction: row
+
+    .cancel
+      padding: 10px 17px
+      box-sizing: border-box
+      color: $color-primary
+      border-radius: 20px
+      border: none
+      cursor: pointer
+      background: $color-white
+
+  .remove-task     
+    width: 92px
+    height: 40px
+    background: $color-error
+    border-radius: 20px
+    border: none
+    cursor: pointer
+    font-size: 14px
+    font-weight: 500
+    color: $color-white
+    margin-left: 10px
+    
+    div
+      display: flex
+      flex-direction: row
+      padding: 10px 17px
+      box-sizing: border-box
+
+      img
+        width: 18px
+
+      span
+        margin-left: 10px
+        font-size: 14px
+        font-weight: 500
+        color: $color-white
+
+    &:hover
+      opacity: .8
+
+.mat-dialog-container
+  border-radius: 28px
